@@ -31,15 +31,13 @@ const renderPokemon = async (pokemon) => {
         pokemonNumber.innerHTML = data.id;
         pokemonImage.style.display = 'block';
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-        
+        searchPokemon = data.id;
     }else{
         pokemonName.innerHTML = 'Not Found :(';
         pokemonNumber.innerHTML = '';
         pokemonImage.style.display = 'none';
     }
 }
-
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -47,20 +45,16 @@ form.addEventListener('submit', (event) => {
     input.value = '';
 
 })
-
-
 buttonNext.addEventListener('click', () => {
     searchPokemon++;
     renderPokemon(searchPokemon);
 })
-
 buttonPrev.addEventListener('click', () => {
-    if(searchPokemon != 1){
+    if(searchPokemon > 1){
         searchPokemon--;
         renderPokemon(searchPokemon);
     }
 })
-
 
 renderPokemon(searchPokemon);
 
