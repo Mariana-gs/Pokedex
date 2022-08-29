@@ -1,6 +1,6 @@
 # Pokédex ![web_1](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif)
 
-Projeto de site Pokédex consumindo a PokéAPI:
+Projeto de site Pokédex consumindo a PokéAPI: https://mariana-gs.github.io/Pokedex/
  
  
 ![Captura de tela 2022-08-29 144138](https://user-images.githubusercontent.com/81964220/187264361-e67489b5-582e-47fc-8cb0-4ad2d5d1dbfc.png)
